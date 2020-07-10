@@ -14,3 +14,6 @@ echo $result2
 #User_case-4
 result3=$(($c+$a/$b))
 echo $result3
+#User_case-5
+result4=$(($a%$b+$c))
+echo $result4
