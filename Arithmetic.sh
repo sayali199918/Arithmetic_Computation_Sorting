@@ -17,3 +17,10 @@ echo $result3
 #User_case-5
 result4=$(($a%$b+$c))
 echo $result4
+#User_case-6
+declare -A dict
+dict[1]=$result1
+dict[2]=$result2
+dict[3]=$result3
+dict[4]=$result4
+echo "Dictionary:" ${dict[@]}
