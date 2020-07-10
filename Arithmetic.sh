@@ -8,3 +8,6 @@ echo $a $b $c
 #User_case-2
 result1=$(($a+$b*$c))
 echo $result1
+#User_case-3
+result2=$(($a*$b+$c))
+echo $result2
