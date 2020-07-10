@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x 
 echo "Welcome to Arithmetic Computation And Sorting Program"
 #User_case-1
 read -p "Enter the  first value:" a
@@ -46,6 +46,25 @@ do
 done
 echo "array in Descending order:"
 for (( i=1;i<5;i++ ))
+do
+	echo ${arr[$i]}
+done
+echo ${arr[@]}
+#User_case-9
+for(( i=1;i<5;i++ ))
+do
+        for((j=$i;j<5;j++))
+        do
+                if [ ${arr[i]} -gt ${arr[$j]} ]
+                then
+                        temp=${arr[i]}
+                        arr[$i]=${arr[$j]}
+                        arr[$j]=$temp
+                fi
+        done
+done
+echo "ARRAY IN ASCENDING ORDER:"
+for (( i=1;i<5;i++))
 do
 	echo ${arr[$i]}
 done
